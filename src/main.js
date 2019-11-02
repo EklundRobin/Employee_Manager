@@ -9,7 +9,7 @@ import './components/firebaseInit';
 Vue.config.productionTip = false;
 
 let app;
-firebase.auth().onAuthStateChanged((user) => {
+firebase.auth().onAuthStateChanged(user => {
   if (!app) {
     app = new Vue({
       el: '#app',
